@@ -1,24 +1,25 @@
 import streamlit as st
 import pandas as pd 
 import numpy as np 
-codea=1457
-codeb=2479
-codec=7841
-coded=6397
-codee=4278
+codea = "AZ3D"
+codeb = "X4HG"
+codeC = "UVB5"
+coded = "BT7D"
+codee = "A2XY"
+st.title("Authenticate Yourself!")
 form = st.form("my_form")
-title= int(form.text_input("Code"))
+title = form.text_input('Enter your code here:')
 submitted = form.form_submit_button("Submit")
 if submitted:
-    if title == codea: 
+    if title == codea : 
         st.write('You are a registered user.')
-    elif title == codeb: 
+    elif title == codeb : 
         st.write('You are a registered user.')
-    elif title == codec: 
+    elif title == codec : 
         st.write('You are a registered user.')
-    elif title == coded: 
+    elif title == coded : 
         st.write('You are a registered user.')
-    elif title == codee: 
+    elif title == codee : 
         st.write('You are a registered user.')
     else:
         st.write('Not a registered user')
